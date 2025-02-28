@@ -1,0 +1,20 @@
+{
+  "lsp": {
+    "mojo": {
+      "settings": {
+        "lsp_path": "~/.magic/envs/default/bin/mojo-lsp-server",
+        "args": ["--log=verbose"] // additional args
+      }
+    }
+  },
+  "languages": {
+    "mojo": {
+      "formatter": {
+        "external": {
+          "command": "magic",
+          "arguments": ["run", "mojo", "format", "-q", "-"]
+        }
+      }
+    }
+  }
+}
